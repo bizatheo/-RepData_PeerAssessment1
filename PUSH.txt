@@ -1,0 +1,16 @@
+I know there are already posted answers above but I wanted to give my solution in windows 
+for uploading to github. It was excrutiatingly painful to figure this out even with the help.
+
+1. Fork repository from github.com
+2. make a new folder in your computer with nothing inside it
+3. open up git bash and cd into the new directory. 
+4. $ git init
+5. $ git remote add origin <https://github.com/user name/RepData_PeerAssessment1.git>
+6. $ git pull origin master
+7. Open up windows explorer and see that your newly created folder suddenly has all the original files
+8. Copy and paste your Rmd file, html file and figures folder created by knitr in your R working directory into your git folder
+9. $ git add .
+10. $ git commit - m "some message"
+11. $ git push origin master
+
+I've even taken the data scientist toolkit  but there was very little practice with git itself so I still feel very uncomfortable with it all
